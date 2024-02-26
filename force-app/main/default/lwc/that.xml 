@@ -1,0 +1,15 @@
+
+<template>
+    <lightning-card title="Upload Document">
+        <lightning-layout>
+            <lightning-layout-item size="12" small-device-size="12" medium-device-size="12" large-device-size="12">
+                <lightning-file-upload
+                    label="Upload Document"
+                    accept=".pdf,.doc,.docx,.txt"
+                    record-id={recordId}
+                    onuploadfinished={handleUploadFinished}>
+                </lightning-file-upload>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+</template>
